@@ -11,5 +11,6 @@ class Song
     puts "artist #{artist} name #{name}"
     song = self.new(name)
     song.artist = Artist.find_or_create_by_name(artist)
+    song
   end
 end
