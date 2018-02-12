@@ -6,7 +6,7 @@ class MP3Importer
   end
 
   def files
-    Dir["#{self.path}/*"]
+    Dir["#{self.path}/*"].map { |file_name| file_name.split('/')[-1] }
   end
 
   def import
