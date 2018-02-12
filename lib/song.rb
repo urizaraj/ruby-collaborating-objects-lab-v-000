@@ -11,4 +11,8 @@ class Song
     song.artist = Artist.find_or_create_by_name(artist)
     song
   end
+
+  def artist_name=(name)
+
+  end
 end
