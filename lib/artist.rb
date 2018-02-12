@@ -7,4 +7,8 @@ class Artist
     self.name = name
     self.songs = []
   end
+
+  def save
+    @@all << self
+  end
 end
