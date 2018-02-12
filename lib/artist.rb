@@ -23,7 +23,7 @@ class Artist
     if result
       return result
     else
-      artist = Artist.new(name)
+      artist = self.new(name)
       artist.save
       return artist
     end
