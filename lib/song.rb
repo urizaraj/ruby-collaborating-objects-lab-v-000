@@ -9,7 +9,7 @@ class Song
     artist, name, genre = file_name.split(' - ')
     puts "[#{artist}][#{name}]"
 
-    song = self.new(name)
+    song = Song.new(name)
     song.artist_name = artist
     song
   end
