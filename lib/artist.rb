@@ -12,10 +12,6 @@ class Artist
     @@all << self
   end
 
-  def all
-    @@all
-  end
-
   def self.find_or_create_by_name(name)
     result = all_artists.find { |artist| artist == name }
 
