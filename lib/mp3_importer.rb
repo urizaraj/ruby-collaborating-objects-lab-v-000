@@ -3,4 +3,12 @@ class MP3Importer
   def initialize(path)
     self.path = path
   end
+
+  def files
+    Dir.entries(self.path)
+  end
+
+  def import
+
+  end
 end
