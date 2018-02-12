@@ -27,12 +27,6 @@ class Artist
     end
   end
 
-  def self.all_artists
-    @@all.map do |artist|
-      artist.name
-    end
-  end
-
   def print_songs
     self.songs.each { |song| puts song.name }
   end
